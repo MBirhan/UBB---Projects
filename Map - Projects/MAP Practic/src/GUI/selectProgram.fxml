@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SelectProgramController">
+    <children>
+      <Label prefHeight="111.0" prefWidth="136.0" text="Select a program">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+        <ListView fx:id="listView" prefHeight="265.0" prefWidth="600.0" />
+        <Button fx:id="runProgramBTN" contentDisplay="CENTER" mnemonicParsing="false" onAction="#buttonRun" prefHeight="12.0" prefWidth="59.0" text="Select">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+    </children>
+</VBox>
