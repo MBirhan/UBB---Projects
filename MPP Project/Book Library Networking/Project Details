@@ -1,0 +1,30 @@
+
+Book store
+A book publisher manages information about books and clients.
+Create an application which allows to:
+perform CRUD operations on books and clients
+buy books
+filter entities based on various criteria
+reports: e.g. sort clients based on the spent amount of money
+
+
+Lab 2-4
+design the solution for your problem using a CASE tool (use cases, class diagram, sequence diagram for each use case)
+use feature driven development
+layered architecture 
+data validation
+all functions will be documented and tested
+
+use Java 8 features (lambda expressions, streams etc); the program should be written without if statements and loops
+persistence: ‘in memory’, text files, xml, db (jdbc); you may use any RDBMS, but we only offer support for PostgreSQL; MS SQL Server is forbidden
+
+
+Lab 5: JDBC
+Continue the project from Lab 2-4 - persistence in DB (using JDBC); MSSQL is forbidden.
+Version 1 (8 p):
+The DB repositories must implement the Repository interface from catalog1_I1_inmemory_infile.zip (they must not extend the InMemoryRepository class)
+Version 2 (10 p):
+The DB repositories must implement the PagingRepository interface from catalog-paging.zip (they must not extend the InMemoryRepository class)
+In the ui, the entities will be printed using pagination as suggested in the provided example
+The DB repositories will always load all entities, i.e., pagination will not be implemented in SQL
+The DB repositories (e.g. findAll(Pageable pageable) method) will delegate pagination logic to other components
