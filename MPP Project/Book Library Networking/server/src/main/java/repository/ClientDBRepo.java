@@ -10,7 +10,7 @@ public class ClientDBRepo extends DBRepository<Long,Client> {
 
     private static final String URL = "jdbc:postgresql://localhost:5432/LibraryApp";
     private static final String USERNAME = "postgres";
-    private static final String PASSWORD = "98blionlion";
+    private static final String PASSWORD = "";
 
     public ClientDBRepo(Validator<Client> validator){
         super(validator);
